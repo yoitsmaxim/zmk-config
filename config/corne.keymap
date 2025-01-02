@@ -99,9 +99,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bl BL_CYCLE     &bl BL_INC     &BetterBT0     &BetterBT1      &BetterBT2      &kp LEFT_BRACE    &kp RIGHT_BRACE  &none           &none         &none            &none  &mkp LCLK
-&rgb_ug RGB_BRI  &bl BL_DEC     &BetterBT3     &BetterBT4      &BetterUSB      &none             &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT        &none  &mkp RCLK
-&rgb_ug RGB_BRD  &bl BL_SET 20  &bl BL_SET 60  &bl BL_SET 100  &none           &bt BT_CLR        &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 4  &to 3
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF &BetterBT0     &BetterBT1      &BetterBT2      &kp LEFT_BRACE    &kp RIGHT_BRACE  &none           &none         &none            &none  &mkp LCLK
+&rgb_ug RGB_ON  &rgb_ug RGB_EFR &BetterBT3     &BetterBT4      &BetterUSB      &none             &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT        &none  &mkp RCLK
+&rgb_ug RGB_OFF  &bl BL_SET 20   &bl BL_SET 60  &bl BL_SET 100  &none           &bt BT_CLR        &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 4  &to 3
                                                &sys_reset      &studio_unlock  &bootloader       &bootloader      &to 1           &to 0
             >;
         };

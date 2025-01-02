@@ -87,8 +87,8 @@ layers:
   - {t: default, h: toggle}
   - {t: ▽, type: trans}
   raise:
-  - '&bl BL_CYCLE'
-  - '&bl BL_INC'
+  - RGB TOG
+  - RGB EFF
   - '&BetterBT0'
   - '&BetterBT1'
   - '&BetterBT2'
@@ -99,8 +99,8 @@ layers:
   - ''
   - ''
   - '&mkp LCLK'
-  - RGB BRI
-  - '&bl BL_DEC'
+  - RGB ON
+  - RGB EFR
   - '&BetterBT3'
   - '&BetterBT4'
   - '&BetterUSB'
@@ -111,7 +111,7 @@ layers:
   - →
   - ''
   - '&mkp RCLK'
-  - RGB BRD
+  - RGB OFF
   - '&bl BL_SET 20'
   - '&bl BL_SET 60'
   - '&bl BL_SET 100'
