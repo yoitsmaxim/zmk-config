@@ -31,7 +31,7 @@
             label = "BETTERBT1";
         };
 
-        BetterBT2: BetterBT3 {
+        BetterBT2: BetterBT2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(48,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
