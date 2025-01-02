@@ -136,10 +136,10 @@ layers:
   - ''
   - ''
   - ''
-  - '&mmv MOVE_X'
+  - '&mmv MOVE_X -100'
   - '&mmv MOVE_Y 100'
-  - '&mmv MOVE_Y'
-  - '&mmv MOVE_Y 100'
+  - '&mmv MOVE_Y -100'
+  - '&mmv MOVE_X 100'
   - ''
   - ''
   - ''
@@ -174,7 +174,7 @@ layers:
   - {t: raise, h: toggle}
   '4':
   - ''
-  - ''
+  - Boot
   - F1
   - F2
   - F3
@@ -183,7 +183,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Boot
   - '&soft_off'
   - ''
   - ''
@@ -211,7 +211,7 @@ layers:
   - {t: '3', h: toggle}
   - ''
   - ''
-  - ''
-  - ''
+  - Reset
+  - Reset
   - {t: lower, h: toggle}
   - {t: raise, h: toggle}
