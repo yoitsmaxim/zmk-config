@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(48,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
-            label = "BETTERBT3";
+            label = "BETTERBT2";
         };
 
         BetterBT3: BetterBT3 {
@@ -57,7 +57,6 @@
             label = "BETTERUSB";
         };
     };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -69,10 +68,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt TAB CAPSLOCK  &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &mkp LCLK
-&kp LEFT_COMMAND  &kp A  &kp S  &kp D      &kp F     &kp G        &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE  &mkp RCLK
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp ENTER      &to 3
-                                &kp LCTRL  &kp LALT  &kp SPACE    &kp SPACE  &to 1  &to 2
+&kp TAB                                          &kp Q  &kp W  &kp E      &kp R     &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &mkp LCLK
+&kp LEFT_COMMAND                                 &kp A  &kp S  &kp D      &kp F     &kp G        &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE  &mkp RCLK
+&mt LEFT_SHIFT C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp Z  &kp X  &kp C      &kp V     &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp ENTER      &to 3
+                                                               &kp LCTRL  &kp LALT  &kp SPACE    &kp SPACE  &to 1  &to 2
             >;
         };
 
@@ -99,19 +98,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bl BL_CYCLE     &bl BL_INC     &BetterBT0     &BetterBT1      &BetterBT2      &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp PAGE_DOWN   &kp PAGE_UP   &kp HOME         &kp END  &none
-&rgb_ug RGB_BRI  &bl BL_DEC     &BetterBT3     &BetterBT4      &BetterUSB      &none             &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT        &none    &none
-&rgb_ug RGB_BRD  &bl BL_SET 20  &bl BL_SET 60  &bl BL_SET 100  &none           &bt BT_CLR        &none &none &none &none  &to 4    &to 3
+&bl BL_CYCLE     &bl BL_INC     &BetterBT0     &BetterBT1      &BetterBT2      &kp LEFT_BRACE    &kp RIGHT_BRACE  &none           &none         &none            &none  &mkp LCLK
+&rgb_ug RGB_BRI  &bl BL_DEC     &BetterBT3     &BetterBT4      &BetterUSB      &none             &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT        &none  &mkp RCLK
+&rgb_ug RGB_BRD  &bl BL_SET 20  &bl BL_SET 60  &bl BL_SET 100  &none           &bt BT_CLR        &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 4  &to 3
                                                &sys_reset      &studio_unlock  &bootloader       &bootloader      &to 1           &to 0
             >;
         };
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &mmv MOVE_X (-100)     &mmv MOVE_Y (-100)  &mmv MOVE_Y (100)   &mmv MOVE_X (100)  &none  &mkp LCLK
-&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &mkp RCLK
-&none  &none  &none  &none  &none  &none    &none           &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 0
-                     &none  &none  &none    &none           &to 1            &to 2
+&none  &none  &none  &none  &none  &none    &mmv MOVE_X (-600)  &mmv MOVE_Y (600)  &mmv MOVE_Y (-600)  &mmv MOVE_X (600)  &none  &mkp LCLK
+&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_UP      &mmv MOVE_RIGHT  &none  &mkp RCLK
+&none  &none  &none  &none  &none  &none    &none             &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &to 0
+                     &none  &none  &none    &none             &to 1            &to 2
             >;
         };
 
