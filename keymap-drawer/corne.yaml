@@ -25,7 +25,7 @@ layers:
   - L
   - BACKSPACE
   - '&mkp RCLK'
-  - LSHIFT
+  - {t: AC NEXT KEYBOARD LAYOUT SELECT, h: LEFT SHIFT}
   - Z
   - X
   - C
