@@ -18,45 +18,70 @@
         BetterBT0: BetterBT0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 0 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0 &out OUT_BLE 
+                        &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,50) 
+                        &rgb_ug RGB_EFFECT_PULSE &rgb_ug RGB_EFFECT_SPEED 2 
+                        &bl BL_ON &bl BL_COLOR_HSB(0,100,50) 
+                        &bl BL_EFFECT_PULSE &bl BL_EFFECT_SPEED 2>;
             label = "BETTERBT0";
         };
 
         BetterBT1: BetterBT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(237,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1 &out OUT_BLE 
+                        &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(237,100,50) 
+                        &rgb_ug RGB_EFFECT_PULSE &rgb_ug RGB_EFFECT_SPEED 2 
+                        &bl BL_ON &bl BL_COLOR_HSB(237,100,50) 
+                        &bl BL_EFFECT_PULSE &bl BL_EFFECT_SPEED 2>;
             label = "BETTERBT1";
         };
 
         BetterBT2: BetterBT2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 2 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(48,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2 &out OUT_BLE 
+                        &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(48,100,50) 
+                        &rgb_ug RGB_EFFECT_PULSE &rgb_ug RGB_EFFECT_SPEED 2 
+                        &bl BL_ON &bl BL_COLOR_HSB(48,100,50) 
+                        &bl BL_EFFECT_PULSE &bl BL_EFFECT_SPEED 2>;
             label = "BETTERBT2";
         };
 
         BetterBT3: BetterBT3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 3 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(123,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
+            bindings = <&out OUT_BLE &bt BT_SEL 3 &out OUT_BLE 
+                        &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(123,100,50) 
+                        &rgb_ug RGB_EFFECT_PULSE &rgb_ug RGB_EFFECT_SPEED 2 
+                        &bl BL_ON &bl BL_COLOR_HSB(123,100,50) 
+                        &bl BL_EFFECT_PULSE &bl BL_EFFECT_SPEED 2>;
             label = "BETTERBT3";
         };
 
         BetterBT4: BetterBT4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 4 &out OUT_BLE &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(289,100,50) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
+            bindings = <&out OUT_BLE &bt BT_SEL 4 &out OUT_BLE 
+                        &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(289,100,50) 
+                        &rgb_ug RGB_EFFECT_PULSE &rgb_ug RGB_EFFECT_SPEED 2 
+                        &bl BL_ON &bl BL_COLOR_HSB(289,100,50) 
+                        &bl BL_EFFECT_PULSE &bl BL_EFFECT_SPEED 2>;
             label = "BETTERBT4";
         };
 
         BetterUSB: BetterUSB {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_USB &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,100) &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRI>;
+            bindings = <&out OUT_USB 
+                        &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,100) 
+                        &rgb_ug RGB_EFFECT_PULSE &rgb_ug RGB_EFFECT_SPEED 2 
+                        &bl BL_ON &bl BL_COLOR_HSB(0,0,100) 
+                        &bl BL_EFFECT_PULSE &bl BL_EFFECT_SPEED 2>;
             label = "BETTERUSB";
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 

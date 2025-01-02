@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   default:
-  - {t: CAPSLOCK, h: ↹}
+  - ↹
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - L
   - BACKSPACE
   - '&mkp RCLK'
-  - LEFT SHIFT
+  - {t: AC NEXT KEYBOARD LAYOUT SELECT, h: LEFT SHIFT}
   - Z
   - X
   - C
@@ -94,11 +94,11 @@ layers:
   - '&BetterBT2'
   - '{'
   - '}'
-  - PAGE DOWN
-  - PAGE UP
-  - Home
-  - End
   - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp LCLK'
   - RGB BRI
   - '&bl BL_DEC'
   - '&BetterBT3'
@@ -110,7 +110,7 @@ layers:
   - ↑
   - →
   - ''
-  - ''
+  - '&mkp RCLK'
   - RGB BRD
   - '&bl BL_SET 20'
   - '&bl BL_SET 60'
@@ -136,12 +136,12 @@ layers:
   - ''
   - ''
   - ''
-  - '&mmv MOVE_X'
-  - '&mmv MOVE_Y 100'
-  - '&mmv MOVE_Y'
-  - '&mmv MOVE_X 100'
+  - '&mmv MOVE_X (-600)'
+  - '&mmv MOVE_Y (600)'
+  - '&mmv MOVE_Y (-600)'
+  - '&mmv MOVE_X (600)'
   - ''
-  - ''
+  - '&mkp LCLK'
   - ''
   - ''
   - ''
@@ -153,6 +153,7 @@ layers:
   - Mouse ↑
   - Mouse →
   - ''
+  - '&mkp RCLK'
   - ''
   - ''
   - ''
@@ -160,11 +161,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '4', h: toggle}
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
   - {t: default, h: toggle}
   - ''
   - ''
