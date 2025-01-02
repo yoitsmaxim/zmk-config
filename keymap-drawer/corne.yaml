@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   default:
-  - ↹
+  - {t: CAPSLOCK, h: ↹}
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - L
   - BACKSPACE
   - '&mkp RCLK'
-  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - LEFT SHIFT
   - Z
   - X
   - C
