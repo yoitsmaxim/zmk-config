@@ -121,7 +121,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Apple "Globe" key
 // https://github.com/zmkfirmware/zmk/issues/947
-// #define GLOBE CAPSLOCK
+#define GLOBE CAPSLOCK
 
 // clang-format off
 
