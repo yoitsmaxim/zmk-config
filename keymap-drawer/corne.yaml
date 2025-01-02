@@ -25,7 +25,7 @@ layers:
   - L
   - BACKSPACE
   - '&mkp RCLK'
-  - {t: AC NEXT KEYBOARD LAYOUT SELECT, h: LEFT SHIFT}
+  - {t: CAPSLOCK, h: LEFT SHIFT}
   - Z
   - X
   - C
@@ -94,10 +94,10 @@ layers:
   - '&BetterBT2'
   - '{'
   - '}'
-  - ''
-  - ''
-  - ''
-  - ''
+  - PAGE DOWN
+  - PAGE UP
+  - Home
+  - End
   - ''
   - RGB BRI
   - '&bl BL_DEC'
@@ -136,9 +136,9 @@ layers:
   - ''
   - ''
   - ''
-  - '&mmv MOVE_X -100'
+  - '&mmv MOVE_X'
   - '&mmv MOVE_Y 100'
-  - '&mmv MOVE_Y -100'
+  - '&mmv MOVE_Y'
   - '&mmv MOVE_X 100'
   - ''
   - ''
