@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   default:
-  - ↹
+  - {t: ↹, h: ESCAPE}
   - Q
   - W
   - E
@@ -136,10 +136,10 @@ layers:
   - ''
   - ''
   - ''
-  - '&mmv MOVE_X (-1500)'
-  - '&mmv MOVE_Y (1500)'
-  - '&mmv MOVE_Y (-1500)'
-  - '&mmv MOVE_X (1500)'
+  - '&mmv MOVE_X(-1500)'
+  - '&mmv MOVE_Y(1500)'
+  - '&mmv MOVE_Y(-1500)'
+  - '&mmv MOVE_X(1500)'
   - ''
   - '&mkp LCLK'
   - ''
