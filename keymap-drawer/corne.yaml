@@ -54,7 +54,7 @@ layers:
   - _
   - '-'
   - '='
-  - '&mt PIPE'
+  - '|'
   - VOLUME UP
   - {t: ▽, type: trans}
   - '*'
